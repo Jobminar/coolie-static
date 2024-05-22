@@ -57,7 +57,7 @@ const ServiceBooking = () => {
     };
     console.log(bookingData);
     alert("Payment successful!");
-    navigate("/payment");
+    navigate("/servicebook");
   };
 
   const handlePaymentSuccess = (response) => {

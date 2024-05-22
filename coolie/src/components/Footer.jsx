@@ -49,16 +49,16 @@ const Footer = () => {
             <h5>COMPANY</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#about">About Us</a>
+                <Link to="/register">About Us</Link>
               </li>
               {/* <li>
                 <a href="#reviews">Reviews</a>
               </li> */}
               <li>
-                <a href="#contact">Contact Us</a>
+                <Link to="/register">Contact Us</Link>
               </li>
               <li>
-                <a href="#careers">Careers</a>
+                <Link to="/register">Careers</Link>
               </li>
             </ul>
           </div>
@@ -66,7 +66,7 @@ const Footer = () => {
             <h5>OUR SERVICES</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#services">Services</a>
+                <Link to="/servicebook">Services</Link>
               </li>
               {/* <li>
                 <a href="#pricing">Pricing</a>
