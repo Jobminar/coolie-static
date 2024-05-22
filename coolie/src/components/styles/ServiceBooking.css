@@ -1,26 +1,25 @@
 /* ServiceBooking.css */
 
-.service-booking-container {
+/* Common styles */
+.slt-booking-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.selected-service-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Service details */
+.slt-selected-container {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.selected-service-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.selected-image {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.booking-input {
+.slt-booking-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -28,27 +27,25 @@
     border-radius: 5px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
+/* Schedule */
+.react-datepicker-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Payment */
+.payment-container {
+    margin-top: 20px;
 }
 
-.service-card-container {
+/* Service card */
+.slt-card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
-.service-card {
+.slt-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,27 +54,43 @@ button:hover {
     border-radius: 5px;
 }
 
-.service-card-image {
+.slt-card-image {
     width: 100%;
-    height: 150px;
+    max-height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
 }
 
-.service-details {
+.slt-details {
     text-align: center;
 }
 
-.book-now-button {
+.slt-book-now-button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: orange;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
-.book-now-button:hover {
-    background-color: #0056b3;
+.slt-book-now-button:hover {
+    background-color: #ffc107;
+    /* Darker shade for hover effect */
+}
+
+/* Scheduling button */
+#schedule-button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#schedule-button:hover {
+    background-color: #dc3545;
+    /* Darker shade for hover effect */
 }

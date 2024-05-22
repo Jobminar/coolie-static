@@ -15,6 +15,10 @@ const NavbarComponent = () => {
   const handleRegisterClick = () => {
     navigate("/register"); // Navigate to register page when register link is clicked
   };
+  const handleBookServiceClick = () => {
+    navigate("/servicebook"); // Navigate to servicebook page when book service link is clicked
+  };
+
   return (
     <div className="sticky-top">
       <nav className="navbar navbar-top">
@@ -39,7 +43,11 @@ const NavbarComponent = () => {
               <img src={Register} alt="Register As A Professional" />
               <span>Register As A Professional</span>
             </a>
-            <a href="#book-service" className="book-service-button">
+            <a
+              href="#book-service"
+              className="book-service-button"
+              onClick={handleBookServiceClick}
+            >
               Book Service
             </a>
           </div>

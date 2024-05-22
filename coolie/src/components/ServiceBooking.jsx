@@ -72,13 +72,13 @@ const ServiceBooking = () => {
   };
 
   return (
-    <div className="service-booking-container">
+    <div className="slt-booking-container">
       {selectedService ? (
         <>
           <h2>Service Details</h2>
-          <div className="selected-service-container">
+          <div className="slt-selected-container">
             <img
-              className="selected-service-image"
+              className="selected-image"
               src={selectedService.image}
               alt={selectedService.title}
             />
@@ -87,7 +87,7 @@ const ServiceBooking = () => {
           </div>
           <h2>Address</h2>
           <input
-            className="booking-input"
+            className="slt-booking-input"
             type="text"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
@@ -114,25 +114,32 @@ const ServiceBooking = () => {
               )}
             </>
           )}
-          <button onClick={handleScheduleService}>Book Now</button>
+          <button
+            id="schedule-button"
+            onClick={handleScheduleService}
+            style={{ backgroundColor: "red", color: "white" }}
+          >
+            Book Now
+          </button>
         </>
       ) : (
         <>
           <h2>Select a Service</h2>
-          <div className="service-card-container">
+          <div className="slt-card-container">
             {services.map((service, index) => (
-              <div className="service-card" key={index}>
+              <div className="slt-card" id={`slt-job-${index}`} key={index}>
                 <img
-                  className="service-card-image"
+                  className="slt-card-image"
                   src={service.image}
                   alt={service.title}
                 />
-                <div className="service-details">
+                <div className="slt-details">
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
                   <button
-                    className="book-now-button"
+                    className="slt-book-now-button"
                     onClick={() => handleSelectService(service)}
+                    style={{ backgroundColor: "orange", color: "white" }}
                   >
                     Select Service
                   </button>
