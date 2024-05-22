@@ -1,0 +1,46 @@
+/* Default styles */
+.how-it-works {
+    text-align: center;
+    padding: 50px 0;
+    border: 1px solid #ced4da;
+    /* Apply border with a thin line */
+    border-radius: 10px;
+    /* Apply border radius */
+    margin: 10px 0
+}
+
+.how-it-works h2 {
+    color: grey;
+    /* Use grey color for the heading */
+}
+
+.how-it-works img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .how-it-works {
+        padding: 30px 0;
+    }
+
+    .how-it-works h2 {
+        font-size: 1.5rem;
+        /* Reduce the font size for smaller screens */
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+    .how-it-works {
+        padding: 80px 0;
+    }
+
+    .how-it-works h2 {
+        font-size: 2.5rem;
+        /* Increase the font size for larger screens */
+    }
+}

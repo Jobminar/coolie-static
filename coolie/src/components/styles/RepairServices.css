@@ -1,0 +1,54 @@
+.repair-services {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    /* Apply border with a thin line */
+    border-radius: 10px;
+    /* Apply border radius */
+    margin: 10px 0;
+}
+
+.repair-services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.repair-services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.repair-service-card {
+    flex: 0 0 auto;
+    width: 200px;
+    /* Set a fixed width to make the cards smaller */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Ensure the card maintains its shape */
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    /* Ensure the image container occupies the full width */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title-container {
+    padding: 10px;
+}
+
+.title-container p {
+    font-size: 1rem;
+    font-weight: 500;
+}

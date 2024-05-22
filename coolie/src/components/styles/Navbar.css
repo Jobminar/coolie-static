@@ -1,0 +1,140 @@
+/* General Navbar styles */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+}
+
+.navbar-top {
+    background-color: #ffc107;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Removed float and text decoration from app-download */
+.navbar-top .app-download a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 5px;
+    /* Add space between icon and text */
+}
+
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.icon-link img {
+    height: 20px;
+    margin-right: 5px;
+    /* Adjust as needed */
+}
+
+.navbar-bottom {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.navbar-logo img {
+    height: 100px;
+}
+
+.navbar-items {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.navbar-items a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-items a img {
+    height: 20px;
+    margin-right: 8px;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.navbar-search input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.navbar-location {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 18px;
+}
+
+.navbar-location svg {
+    margin-right: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-items,
+    .navbar-auth,
+    .navbar-search,
+    .navbar-location {
+        margin-bottom: 10px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+    }
+}
+
+.book-service-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    /* Increased padding */
+    border-radius: 25px;
+    /* Adjusted border radius */
+    text-decoration: none;
+    height: 2rem;
+    margin-left: auto;
+}

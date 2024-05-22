@@ -1,0 +1,71 @@
+.custom-hero-section {
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    color: #000;
+}
+
+.custom-hero-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* Added padding */
+    color: grey;
+    /* Changed color to grey */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.custom-service-card {
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.custom-service-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.custom-service-card img {
+    padding: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+
+}
+
+.custom-service-card h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.custom-service-card p {
+    font-size: 12px;
+}
+
+.custom-service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.custom-service-cards .col {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    flex: 0 0 300px;
+    max-width: 300px;
+}
