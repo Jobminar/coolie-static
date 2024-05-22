@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="footer-logo">
             <img src={coolieLogo} alt="Coolie Logo" />
           </div>
-          <Form onSubmit={handleSubmit} className="subscribe-form">
+          {/* <Form onSubmit={handleSubmit} className="subscribe-form">
             <InputGroup className="subscribe-input">
               <InputGroup.Text>
                 <img src={mailIcon} alt="Mail Icon" />
@@ -42,7 +42,7 @@ const Footer = () => {
                 SUBSCRIBE
               </Button>
             </InputGroup>
-          </Form>
+          </Form> */}
         </div>
         <div className="footer-top">
           <div className="footer-section">
@@ -51,9 +51,9 @@ const Footer = () => {
               <li>
                 <a href="#about">About Us</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#reviews">Reviews</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#contact">Contact Us</a>
               </li>
@@ -68,12 +68,12 @@ const Footer = () => {
               <li>
                 <a href="#services">Services</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#pricing">Pricing</a>
               </li>
               <li>
                 <a href="#faq">FAQ</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer-section">

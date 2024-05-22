@@ -8,52 +8,61 @@
 }
 
 .custom-hero-section h2 {
-    font-size: 36px;
+    font-size: 42px;
+    /* Increased font size */
     font-weight: bold;
-    margin-bottom: 20px;
-    padding: 10px;
-    /* Added padding */
+    margin-bottom: 25px;
+    /* Increased margin */
+    padding: 15px;
+    /* Increased padding */
     color: grey;
-    /* Changed color to grey */
     text-align: left;
-    /* Align text to the left */
+    margin-left: 2.8rem;
+    /* Adjust the left margin as needed */
 }
+
 
 .custom-service-card {
     color: #000;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 
 .custom-service-card-header {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .custom-service-card img {
-    padding: 5px;
+    width: 60px;
+    /* Increased image width */
+    height: 60px;
+    /* Increased image height */
+    padding: 12px;
+    /* Increased padding */
     object-fit: cover;
-    margin-right: 10px;
-
+    margin-right: 15px;
 }
 
 .custom-service-card h3 {
-    font-size: 14px;
+    font-size: 20px;
+    /* Increased font size */
     font-weight: bold;
 }
 
 .custom-service-card p {
-    font-size: 12px;
+    font-size: 18px;
+    /* Increased font size */
 }
 
 .custom-service-cards {
@@ -65,7 +74,30 @@
 .custom-service-cards .col {
     display: flex;
     justify-content: center;
-    margin: 10px;
-    flex: 0 0 300px;
-    max-width: 300px;
+    margin: 15px;
+    flex: 0 0 400px;
+    /* Increased the flex value */
+    max-width: 380px;
+    /* Increased the max-width */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .custom-hero-section h2 {
+        font-size: 28px;
+    }
+
+    .custom-service-card h3 {
+        font-size: 16px;
+    }
+
+    .custom-service-card p {
+        font-size: 14px;
+    }
+
+    .custom-service-cards .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }

@@ -5,7 +5,6 @@
     z-index: 1000;
 }
 
-
 .navbar {
     display: flex;
     align-items: center;
@@ -21,14 +20,11 @@
     align-items: center;
 }
 
-/* Removed float and text decoration from app-download */
 .navbar-top .app-download a {
     text-decoration: none;
     color: inherit;
     margin-right: 5px;
-    /* Add space between icon and text */
 }
-
 
 .navbar-icons {
     display: flex;
@@ -47,26 +43,38 @@
 .icon-link img {
     height: 20px;
     margin-right: 5px;
-    /* Adjust as needed */
 }
 
 .navbar-bottom {
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
     width: 100%;
+}
+
+.navbar-logo {
+    flex: 1;
 }
 
 .navbar-logo img {
     height: 100px;
 }
 
+.navbar-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    /* Adjust this value to move the navbar items to the right */
+}
+
 .navbar-items {
     display: flex;
-    gap: 15px;
-    margin-bottom: 10px;
+    gap: 18px;
     align-items: center;
+    margin-bottom: 10px;
+    margin-left: 16rem;
 }
 
 .navbar-items a {
@@ -88,27 +96,54 @@
     margin-bottom: 10px;
 }
 
+.navbar-location {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 18px;
+    margin-right: 10px;
+    background-color: #d5d5d5;
+    /* Light grey background color */
+    padding: 5px 10px;
+    /* Padding to create a button-like appearance */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-bottom: 5px;
+}
+
+.navbar-location a {
+    text-decoration: none;
+    /* Remove underline from the anchor tag */
+    color: inherit;
+    /* Inherit the color from parent */
+}
+
+
+.navbar-location svg {
+    margin-right: 5px;
+}
+
 .navbar-search input {
     width: 100%;
     max-width: 600px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
-    margin-right: 10px;
 }
 
-.navbar-location {
-    display: flex;
-    align-items: center;
-    color: #333;
-    font-size: 18px;
+.book-service-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    height: 2rem;
 }
 
-.navbar-location svg {
-    margin-right: 5px;
-}
+/* General Navbar styles */
 
-/* Responsive styles */
+/* Existing styles... */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -120,21 +155,84 @@
     .navbar-search,
     .navbar-location {
         margin-bottom: 10px;
+        margin-left: 0;
+        /* Remove the left margin on smaller screens */
     }
 
     .navbar-search input {
-        width: 100%;
+        max-width: 100%;
+        /* Ensure the search input takes up full width */
+        display: none;
+        /* Hide the search input */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1001;
+        /* Set a higher z-index for the search input */
+    }
+
+    .navbar-right {
+        flex-direction: row;
+        /* Align navbar items horizontally on smaller screens */
+        justify-content: flex-end;
+        /* Align navbar items to the right on smaller screens */
+        padding-left: 0;
+        /* Remove left padding on smaller screens */
+        gap: 10px;
+        /* Add gap between navbar items on smaller screens */
+    }
+
+    /* Additional styles for the location button */
+    .navbar-location {
+        font-size: 14px;
+        /* Smaller font size for the button text */
+        padding: 3px 8px;
+        /* Smaller padding for the button */
     }
 }
 
-.book-service-button {
-    background-color: #ff0000;
-    color: #fff;
-    padding: 10px 20px;
-    /* Increased padding */
-    border-radius: 25px;
-    /* Adjusted border radius */
-    text-decoration: none;
-    height: 2rem;
-    margin-left: auto;
+/* Additional styles for the search input */
+.search-container input {
+    display: none;
+}
+
+.search-container.active input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Additional styles for the search input */
+.search-container input {
+    display: none;
+}
+
+.search-container.active input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
 }

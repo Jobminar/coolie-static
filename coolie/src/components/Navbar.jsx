@@ -1,15 +1,9 @@
-// NavbarComponent.jsx
-
 import React from "react";
-import { FaMapMarkerAlt, FaApple, FaAndroid } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import "./styles/Navbar.css"; // Import the CSS file
 import CoolieLogo from "./assets/coolie-logo.png";
-import CallusLogo from "./assets/callus.png";
-import Cart from "./assets/Cart.png";
 import Register from "./assets/Register.png";
-import Whatsapp from "./assets/whatsappp.png";
-import TranslatorLogo from "./assets/Translation.png";
-import mobileuserIcon from "./assets/mobile-user-icon.png";
+import Cart from "./assets/Cart.png";
 import { useNavigate } from "react-router-dom";
 
 const NavbarComponent = () => {
@@ -18,67 +12,54 @@ const NavbarComponent = () => {
   const handleLogoClick = () => {
     navigate("/"); // Navigate to home page when logo is clicked
   };
-
+  const handleRegisterClick = () => {
+    navigate("/register"); // Navigate to register page when register link is clicked
+  };
   return (
     <div className="sticky-top">
-      {" "}
-      {/* Add the sticky-top class here */}
       <nav className="navbar navbar-top">
         <div className="app-download">
-          <a href="#download">
-            <FaApple /> <FaAndroid />
-          </a>
-          <span>Download our app</span>
+          <a href="#download">{/* <FaApple /> <FaAndroid /> */}</a>
+          {/* <span>Download our app</span> */}
         </div>
         <div className="navbar-icons">
-          <a href="#login" className="icon-link">
-            <img src={mobileuserIcon} alt="Login Icon" />
-            <span>Login</span>
-          </a>
-          <a href="#register" className="icon-link">
-            <img src={Register} alt="Register Icon" />
-            <span>Register</span>
-          </a>
           <a href="#cart" className="icon-link">
             <img src={Cart} alt="Cart Icon" />
             <span>Cart</span>
           </a>
-          <a href="#translation" className="icon-link">
-            <img src={TranslatorLogo} alt="Translation Icon" />
-            <span>Translation</span>
-          </a>
         </div>
       </nav>
       <nav className="navbar navbar-bottom">
-        <div className="navbar-items">
-          <div className="navbar-logo" onClick={handleLogoClick}>
-            <img src={CoolieLogo} alt="CoolieNo1" />
-          </div>
-          <a href="tel:+1234567890">
-            <img src={CallusLogo} alt="Call Us" />
-            <span>Call Us</span>
-          </a>
-          <a href="#register">
-            <img src={Register} alt="Register As A Professional" />
-            <span>Register As A Professional</span>
-          </a>
-          <a href="https://wa.me/1234567890">
-            <img src={Whatsapp} alt="WhatsApp Us" />
-            <span>WhatsApp Us</span>
-          </a>
-          <a href="#book-service" className="book-service-button">
-            Book Service
-          </a>
+        <div className="navbar-logo" onClick={handleLogoClick}>
+          <img src={CoolieLogo} alt="CoolieNo1" />
         </div>
-        <div className="navbar-search">
-          <div className="navbar-location">
-            <FaMapMarkerAlt />
-            <span>Hyderabad</span>
+        <div className="navbar-right">
+          <div className="navbar-items">
+            <a href="#register" onClick={handleRegisterClick}>
+              <img src={Register} alt="Register As A Professional" />
+              <span>Register As A Professional</span>
+            </a>
+            <a href="#book-service" className="book-service-button">
+              Book Service
+            </a>
           </div>
-          <input
-            type="text"
-            placeholder="Search for a service e.g. Air Conditioner, Kitchen Chimney, Carpenter, Pest control etc"
-          />
+          <div className="navbar-search">
+            <div className="navbar-location">
+              <FaMapMarkerAlt />
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Hyderabad"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hyderabad
+              </a>
+            </div>
+
+            <input
+              type="text"
+              placeholder="Search for a service e.g. House Cleaning,Air Conditioner, Kitchen Chimney,Electrical works, etc"
+            />
+          </div>
         </div>
       </nav>
     </div>

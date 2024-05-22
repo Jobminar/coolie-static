@@ -1,0 +1,60 @@
+.register-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-logo {
+    width: 100px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffbf00;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .register-page {
+        padding: 10px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .register-logo {
+        width: 80px;
+    }
+
+    input,
+    select,
+    button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
