@@ -8,7 +8,7 @@ const PaymentComponent = ({ amount, onSuccess, onFailure }) => {
 
   return (
     <div>
-      <button onClick={handlePayment}>Pay Now with Razorpay</button>
+      <p>900/-</p>
     </div>
   );
 };

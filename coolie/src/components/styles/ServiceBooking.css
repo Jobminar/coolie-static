@@ -1,96 +1,119 @@
 /* ServiceBooking.css */
 
-/* Common styles */
+/* Common styles for the entire booking container */
 .slt-booking-container {
     max-width: 800px;
+    /* Limit the container width for better readability */
     margin: 0 auto;
+    /* Center the container horizontally */
     padding: 20px;
+    /* Add some breathing space around the content */
+    font-family: sans-serif;
+    /* Use a clear font */
 }
 
-/* Service details */
+/* Styling for the selected service details */
 .slt-selected-container {
     text-align: center;
+    /* Center the service details */
     margin-bottom: 20px;
+    /* Add space below the details */
 }
 
 .selected-image {
     max-width: 100%;
+    /* Ensure image doesn't overflow its container */
     height: auto;
+    /* Maintain aspect ratio when resizing */
     margin-bottom: 10px;
+    /* Space below the image */
 }
 
+/* Input fields for booking information */
 .slt-booking-input {
     width: 100%;
+    /* Input fields take up full width */
     padding: 10px;
-    margin-bottom: 20px;
+    /* Internal padding for better usability */
+    margin-bottom: 15px;
+    /* Space between input fields */
     border: 1px solid #ccc;
+    /* Subtle border */
     border-radius: 5px;
+    /* Slightly rounded corners */
 }
 
-/* Schedule */
-.react-datepicker-wrapper {
+/* Styling for the date picker */
+.react-datepicker-wrapper,
+.react-datepicker__input-container input {
     width: 100%;
-    margin-bottom: 20px;
 }
 
-/* Payment */
+/* Payment section styles */
 .payment-container {
     margin-top: 20px;
+    /* Separate the payment section visually */
 }
 
-/* Service card */
+/* Service card grid layout */
 .slt-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Responsive columns */
     gap: 20px;
+    /* Consistent spacing between cards */
 }
 
+/* Individual service card styles */
 .slt-card {
     display: flex;
     flex-direction: column;
+    /* Arrange content vertically */
     align-items: center;
-    padding: 10px;
+    /* Center items horizontally within the card */
+    padding: 15px;
+    /* Add padding to the card */
     border: 1px solid #ccc;
+    /* Subtle border */
     border-radius: 5px;
+    /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
 }
 
 .slt-card-image {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
+    /* Image covers container while maintaining aspect ratio */
     margin-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+    /* Round top corners of the image */
 }
 
 .slt-details {
     text-align: center;
 }
 
-.slt-book-now-button {
-    padding: 5px 10px;
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.slt-book-now-button:hover {
-    background-color: #ffc107;
-    /* Darker shade for hover effect */
-}
-
-/* Scheduling button */
+/* Buttons */
+.slt-book-now-button,
 #schedule-button {
-    padding: 5px 10px;
-    background-color: red;
+    padding: 8px 15px;
+    /* Adjust padding for better visual appeal */
+    background-color: #007bff;
+    /* Primary color (you can customize) */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px;
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+    margin: 10px 0;
+    /* Add margin below the button */
 }
 
+.slt-book-now-button:hover,
 #schedule-button:hover {
-    background-color: #dc3545;
-    /* Darker shade for hover effect */
+    background-color: #0056b3;
+    /* Darker shade on hover */
 }

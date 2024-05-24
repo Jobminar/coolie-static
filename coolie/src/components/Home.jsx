@@ -5,6 +5,7 @@ import HowItWorks from "./HowitWorks";
 import OurCoreServices from "./OurCoreServices";
 import About from "./About";
 import ServiceBooking from "./ServiceBooking";
+import RepairService from "./RepairServices";
 
 const Home = () => {
   const [selectedService, setSelectedService] = useState(null);
@@ -25,6 +26,7 @@ const Home = () => {
       <HeroSection />
       <MostBookedServices />
       <HowItWorks />
+      {/* <RepairService /> */}
       <About />
     </div>
   );

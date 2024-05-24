@@ -5,6 +5,10 @@
     z-index: 1000;
 }
 
+#bookthat {
+    color: #ffffff
+}
+
 .navbar {
     display: flex;
     align-items: center;

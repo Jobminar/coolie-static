@@ -6,34 +6,28 @@ import "./styles/RefundPolicy.css";
 const RefundPolicy = () => {
   return (
     <div className="policy-container">
-      <h1>Refund Policy</h1>
+      <h2>Refund Policy</h2>
       <p>
-        Service Guarantee: Our company offer a satisfaction guarantee, promising
-        to redo the work or issue a refund if the customer is not happy with the
-        results. Cancellation Policy: This outlines the terms under which a
-        customer can cancel a scheduled service and whether they are entitled to
-        a full or partial refund. Timeframe for Refunds: This specifies how long
-        a customer has to request a refund after the service has been completed.
-        Refund Method: This details how the refund will be processed, such as
-        through the original payment method or via store credit. Exceptions:
-        Some policies may list specific situations where refunds are not
-        available, such as for consumable materials used during the service or
-        if the customer's dissatisfaction is due to factors outside the
-        company's control. Examples of Refund Policies: Full Refund within X
-        Days: "If you are not completely satisfied with our service, you may
-        request a full refund within 30 days of the service date. Please contact
-        us to initiate the refund process." Partial Refund or Re-do Service: "We
-        guarantee your satisfaction with our work. If you are unhappy with the
-        results, we will either re-do the service at no additional cost or offer
-        a 50% refund. Please notify us within 14 days of the service date." No
-        Refund for Consumable Materials: "Refunds are available for labor costs
-        if you are dissatisfied with the service. However, we do not offer
-        refunds for consumable materials used during the service, such as
-        cleaning supplies or replacement parts." Cancellation Policy: "You may
-        cancel a scheduled service up to 24 hours before the appointment time
-        and receive a full refund. Cancellations made within 24 hours of the
-        appointment time may be subject to a cancellation fee of $50."
+        Thank you for choosing Coolie No1. If you are not entirely satisfied
+        with your purchase, we're here to help.
       </p>
+      <h3>Refunds</h3>
+      <p>
+        Once we receive your return, we will inspect it and notify you that we
+        have received your returned item. We will immediately notify you of the
+        status of your refund after inspecting the item.
+      </p>
+      <h3>Eligibility for Refunds</h3>
+      <p>
+        To be eligible for a refund, you must notify us within 5-7 days of your
+        purchase. Your item must be in the original packaging.
+      </p>
+      <h3>Contact Us</h3>
+      <p>
+        If you have any questions on how to return your item to us, contact us
+        at support@coolieno1.com.
+      </p>
+      {/* Add more sections as needed */}
     </div>
   );
 };

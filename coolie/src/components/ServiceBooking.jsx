@@ -6,8 +6,8 @@ import PaymentComponent from "./PaymentComponent";
 import "./styles/ServiceBooking.css";
 import HomeApplianceCleaning from "./assets/HomeAppliance-cleaning.png";
 import ElectricalWorks from "./assets/Electricalworks.png";
-import ApplianceRepair from "./assets/Appliance-Repair.png";
-import HairSaloon from "./assets/HairSaloon.png";
+import ACservice from "./assets/ACservice.png";
+import Geyser from "./assets/Geyser.png";
 
 const ServiceBooking = () => {
   const navigate = useNavigate();
@@ -19,27 +19,32 @@ const ServiceBooking = () => {
 
   const services = [
     {
-      title: "Home & Appliance Cleaning",
-      description: "Lorem Ipsum has been the industry's .",
+      title: "Kitchen Cleaning",
+      description:
+        "Ensure your kitchen is spotless and hygienic with our comprehensive kitchen cleaning service, removing grease, grime, and bacteria from every corner.",
       image: HomeApplianceCleaning,
+      price: 900,
     },
     {
-      title: "Electrical Works",
+      title: "Bathroom Cleaning",
       description:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "Experience a sparkling clean bathroom with our specialized cleaning service, targeting tough stains, mold, and mildew for a fresh and sanitary environment.",
+      image: Geyser,
+      price: 900,
+    },
+    {
+      title: "Door Bell Installation",
+      description:
+        "Get your doorbell installed professionally and efficiently, ensuring seamless operation and enhanced security for your home.",
       image: ElectricalWorks,
+      price: 900,
     },
     {
-      title: "Appliance Repair",
+      title: "AC Installation",
       description:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image: ApplianceRepair,
-    },
-    {
-      title: "Hair Saloon",
-      description:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image: HairSaloon,
+        "Our expert technicians provide reliable and quick AC installation services to keep your home cool and comfortable throughout the year.",
+      image: ACservice,
+      price: 900,
     },
   ];
 
@@ -84,6 +89,7 @@ const ServiceBooking = () => {
             />
             <h3>{selectedService.title}</h3>
             <p>{selectedService.description}</p>
+            <p>Service Charge only Rs{selectedService.price} /-</p>
           </div>
           <h2>Address</h2>
           <input
@@ -119,7 +125,7 @@ const ServiceBooking = () => {
             onClick={handleScheduleService}
             style={{ backgroundColor: "red", color: "white" }}
           >
-            Book Now
+            Pay with Razorpay
           </button>
         </>
       ) : (

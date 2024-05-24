@@ -11,7 +11,8 @@ const PrivacyPolicy = React.lazy(() => import("./components/PrivacyPolicy"));
 const RefundPolicy = React.lazy(() => import("./components/RefundPolicy"));
 const RegisterPage = React.lazy(() => import("./components/RegisterPage"));
 const ServiceBooking = React.lazy(() => import("./components/ServiceBooking"));
-
+const ContactUs = React.lazy(() => import("./components/Contactus"));
+const Career = React.lazy(() => import("./components/Career"));
 function App() {
   return (
     <Router>
@@ -27,6 +28,8 @@ function App() {
             <Route path="/servicebook" element={<ServiceBooking />} />
             {/* Add PaymentComponent route */}
             <Route path="/payment" element={<PaymentComponent />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/career" element={<Career />} />
           </Routes>
         </Suspense>
         <Footer />

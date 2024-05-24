@@ -1,17 +1,17 @@
 /* TermsOfService.css */
 
-.terms-container {
+.policy-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.terms-container h1 {
+.policy-container h1 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.terms-container p {
+.policy-container p {
     line-height: 1.6;
     margin-bottom: 15px;
 }

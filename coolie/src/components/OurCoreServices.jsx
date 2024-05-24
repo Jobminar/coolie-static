@@ -3,34 +3,35 @@ import { useNavigate } from "react-router-dom";
 import "./styles/OurCoreServices.css";
 import HomeApplianceCleaning from "./assets/HomeAppliance-cleaning.png";
 import ElectricalWorks from "./assets/Electricalworks.png";
-import ApplianceRepair from "./assets/Appliance-Repair.png";
-import HairSaloon from "./assets/HairSaloon.png";
+import Geyser from "./assets/Geyser.png";
+import ACservice from "./assets/ACservice.png";
 
 const OurCoreServices = () => {
   const navigate = useNavigate();
   const services = [
     {
-      title: "Home & Appliance Cleaning",
-      description: "Lorem Ipsum has been the industry's .",
+      title: "Kitchen Cleaning",
+      description:
+        "Transform your kitchen into a sparkling haven with our comprehensive cleaning services. We meticulously clean every corner, ensuring a hygienic and inviting cooking space.",
       image: HomeApplianceCleaning,
     },
     {
-      title: "Electrical Works",
+      title: "Bathroom Cleaning",
       description:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "Experience a fresh and sanitized bathroom with our top-notch cleaning services. We remove tough stains, mold, and grime, leaving your bathroom spotless and refreshing.",
+      image: Geyser,
+    },
+    {
+      title: "Door Bell Installation",
+      description:
+        "Enhance the security and convenience of your home with our professional doorbell installation services. Our experts ensure a seamless installation, giving you peace of mind.",
       image: ElectricalWorks,
     },
     {
-      title: "Appliance Repair",
+      title: "AC Installation",
       description:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image: ApplianceRepair,
-    },
-    {
-      title: "Hair Saloon",
-      description:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image: HairSaloon,
+        "Stay cool and comfortable with our reliable AC installation services. Our technicians ensure proper installation for optimal performance and energy efficiency.",
+      image: ACservice,
     },
   ];
 

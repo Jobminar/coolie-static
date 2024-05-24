@@ -3,11 +3,8 @@
     padding: 50px 0;
     background-color: #f8f9fa;
     border: 1px solid #ced4da;
-    /* Apply border with a thin line */
     border-radius: 10px;
-    /* Apply border radius */
 }
-
 
 #service-heading {
     font-size: 2.5rem;
@@ -20,19 +17,15 @@
     justify-content: center;
     gap: 20px;
     overflow-x: auto;
-    /* Enable horizontal scrolling */
     flex-wrap: nowrap;
-    /* Prevent wrapping to keep cards in a single row */
 }
 
 .service-card {
     flex: 0 0 auto;
     min-width: 200px;
-    /* Set a smaller minimum width */
     max-width: 250px;
-    /* Set a smaller maximum width */
     background-color: white;
-    padding: 0px;
+    padding: 0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -41,14 +34,12 @@
 
 .service-card img {
     width: 100%;
-    height: auto;
-    /* Set height to auto to maintain aspect ratio */
+    height: 150px;
+    /* Fixed height for all images */
     object-fit: cover;
-    /* Maintain aspect ratio while filling the available space */
     margin-bottom: 0;
-    /* Remove margin-bottom */
+    border-radius: 10px;
 }
-
 
 .service-title {
     font-size: 1.2rem;
@@ -63,8 +54,7 @@
 }
 
 .book-now-button {
-    background-color: #dc3545;
-    /* Red color */
+    background-color: #ff0000;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -72,13 +62,9 @@
     cursor: pointer;
     font-weight: bold;
     text-align: center;
-    /* Center text */
     display: inline-block;
-    /* Display as inline-block to align properly */
     margin-top: 12px;
-    /* Add margin for spacing */
 }
-
 
 .service-details {
     padding: 20px;

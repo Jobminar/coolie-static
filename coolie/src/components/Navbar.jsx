@@ -46,6 +46,7 @@ const NavbarComponent = () => {
             <a
               href="#book-service"
               className="book-service-button"
+              id="bookthat"
               onClick={handleBookServiceClick}
             >
               Book Service
