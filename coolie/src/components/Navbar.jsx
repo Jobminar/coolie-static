@@ -21,18 +21,6 @@ const NavbarComponent = () => {
 
   return (
     <div className="sticky-top">
-      <nav className="navbar navbar-top">
-        <div className="app-download">
-          <a href="#download">{/* <FaApple /> <FaAndroid /> */}</a>
-          {/* <span>Download our app</span> */}
-        </div>
-        <div className="navbar-icons">
-          <a href="#cart" className="icon-link">
-            <img src={Cart} alt="Cart Icon" />
-            <span>Cart</span>
-          </a>
-        </div>
-      </nav>
       <nav className="navbar navbar-bottom">
         <div className="navbar-logo" onClick={handleLogoClick}>
           <img src={CoolieLogo} alt="CoolieNo1" />
