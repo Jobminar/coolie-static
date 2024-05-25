@@ -3,7 +3,6 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import "./styles/Navbar.css"; // Import the CSS file
 import CoolieLogo from "./assets/coolie-logo.png";
 import Register from "./assets/Register.png";
-import Cart from "./assets/Cart.png";
 import { useNavigate } from "react-router-dom";
 
 const NavbarComponent = () => {
@@ -25,38 +24,35 @@ const NavbarComponent = () => {
         <div className="navbar-logo" onClick={handleLogoClick}>
           <img src={CoolieLogo} alt="CoolieNo1" />
         </div>
-        <div className="navbar-right">
-          <div className="navbar-items">
-            <a href="#register" onClick={handleRegisterClick}>
-              <img src={Register} alt="Register As A Professional" />
-              <span>Register As A Professional</span>
-            </a>
+        <div className="navbar-center">
+          <div className="navbar-location">
+            <FaMapMarkerAlt />
             <a
-              href="#book-service"
-              className="book-service-button"
-              id="bookthat"
-              onClick={handleBookServiceClick}
+              href="https://www.google.com/maps/search/?api=1&query=Hyderabad"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Book Service
+              Hyderabad
             </a>
           </div>
-          <div className="navbar-search">
-            <div className="navbar-location">
-              <FaMapMarkerAlt />
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Hyderabad"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Hyderabad
-              </a>
-            </div>
-
-            <input
-              type="text"
-              placeholder="Search for a service e.g. House Cleaning,Air Conditioner, Kitchen Chimney,Electrical works, etc"
-            />
-          </div>
+          <input
+            type="text"
+            placeholder="Search for a service e.g. House Cleaning, Air Conditioner, Kitchen Chimney, Electrical works, etc"
+          />
+        </div>
+        <div className="navbar-items">
+          <a href="#register" onClick={handleRegisterClick}>
+            <img src={Register} alt="Register As A Professional" />
+            <span>Register As A Professional</span>
+          </a>
+          <a
+            href="#book-service"
+            className="book-service-button"
+            id="bookthat"
+            onClick={handleBookServiceClick}
+          >
+            Book Service
+          </a>
         </div>
       </nav>
     </div>

@@ -1,35 +1,35 @@
 import React from "react";
 import "./styles/MostBookedJobs.css";
-import HomecleaningImage from "./assets/Home-cleaning.png";
-import ElectricalplumbingImage from "./assets/Electricalplumbing.png";
-import AppliancerepairImage from "./assets/Appliancerepair.png";
-import HairSaloonImage from "./assets/HairSaloon.png";
+import HomeApplianceCleaning from "./assets/HomeAppliance-cleaning.png";
+import ElectricalWorks from "./assets/Electricalworks.png";
+import ACservice from "./assets/ACservice.png";
+import Geyser from "./assets/Geyser.png";
 
 const MostBookedJobs = () => {
   const jobs = [
     {
-      title: "Home & Appliance Cleaning",
+      title: "Kitchen Cleaning",
       rating: "4.5 (12K)",
       price: "Rs 900",
-      image: HomecleaningImage,
+      image: HomeApplianceCleaning,
     },
     {
-      title: "Electrical / Plumbing / Carpenter",
+      title: "Bathroom Cleaning",
       rating: "4.5 (12K)",
       price: "Rs 900",
-      image: ElectricalplumbingImage,
+      image: Geyser,
     },
     {
-      title: "Appliance Repair",
+      title: "Door Bell Installation",
       rating: "4.5 (12K)",
       price: "Rs 900",
-      image: AppliancerepairImage,
+      image: ElectricalWorks,
     },
     {
-      title: "Hair Saloon for Women",
+      title: "AC Installation",
       rating: "4.5 (12K)",
       price: "Rs 900",
-      image: HairSaloonImage,
+      image: ACservice,
     },
   ];
 

@@ -89,7 +89,7 @@ const ServiceBooking = () => {
             />
             <h3>{selectedService.title}</h3>
             <p>{selectedService.description}</p>
-            <p>Service Charge only Rs{selectedService.price} /-</p>
+            <p>Price Including all charges Rs {selectedService.price} /-</p>
           </div>
           <h2>Address</h2>
           <input
