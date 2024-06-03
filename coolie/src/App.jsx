@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
 import PaymentComponent from "./components/PaymentComponent"; // Import PaymentComponent
+import AboutUs from "./components/Aboutpage";
 
 const Home = React.lazy(() => import("./components/Home"));
 const TermsOfService = React.lazy(() => import("./components/TermsOfService"));
@@ -30,6 +31,7 @@ function App() {
             <Route path="/payment" element={<PaymentComponent />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/career" element={<Career />} />
+            <Route path="/aboutpage" element={<AboutUs />} />
           </Routes>
         </Suspense>
         <Footer />

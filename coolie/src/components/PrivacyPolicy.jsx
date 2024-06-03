@@ -1,5 +1,3 @@
-// PrivacyPolicy.jsx
-
 import React from "react";
 import "./styles/PrivacyPolicy.css";
 
@@ -32,7 +30,6 @@ const PrivacyPolicy = () => {
         electronic storage is 100% secure and reliable, and we cannot guarantee
         its absolute security.
       </p>
-      {/* Add more sections as needed */}
     </div>
   );
 };

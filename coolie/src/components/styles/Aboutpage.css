@@ -1,0 +1,47 @@
+/* AboutUs.css */
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* Center align the content */
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.about-logo {
+    width: 600px;
+    /* Adjust as needed */
+    display: block;
+    /* Center the logo */
+    margin: 0 auto 30px;
+    /* Center the logo and add space below it */
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-section {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    /* Align text to the left within the section */
+    margin: 0 auto;
+    /* Center the section */
+}
+
+.about-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+}

@@ -1,5 +1,3 @@
-// TermsOfService.jsx
-
 import React from "react";
 import "./styles/TermsOfService.css";
 
@@ -7,29 +5,66 @@ const TermsOfService = () => {
   return (
     <div className="policy-container">
       <h2>Terms and Conditions</h2>
+      <p>Last updated on Jun 3, 2024</p>
       <p>
-        Welcome to Coolie No1. These terms and conditions outline the rules and
-        regulations for the use of our service.
+        For the purpose of these Terms and Conditions, the term "we", "us",
+        "our" used anywhere on this page shall mean COOLIENO1 SERVICESPHERE
+        PRIVATE LIMITED, whose registered/operational office is 18-5-294/A,
+        Sapthagiri nagar, kapilateertham Rd, Tirupati 9 Urban, chithoor Dist
+        Chittoor ANDHRA PRADESH 517501. "You", "your", "user", “visitor” shall
+        mean any natural or legal person who is visiting our website and/or
+        agreed to purchase from us.
       </p>
-      <h3>Introduction</h3>
       <p>
-        By accessing this website, we assume you accept these terms and
-        conditions. Do not continue to use Coolie No1 if you do not agree to all
-        the terms and conditions stated on this page.
+        Your use of the website and/or purchase from us is governed by the
+        following Terms and Conditions:
       </p>
-      <h3>Service Use</h3>
-      <p>
-        All services provided by Coolie No1 are subject to availability. We
-        reserve the right to refuse service to anyone for any reason at any
-        time.
-      </p>
-      <h3>Changes to Terms</h3>
-      <p>
-        We reserve the right to amend these terms and conditions at any time.
-        Your continued use of the site following any changes signifies your
-        agreement to be bound by the updated terms.
-      </p>
-      {/* Add more sections as needed */}
+      <ul>
+        <li>
+          The content of the pages of this website is subject to change without
+          notice.
+        </li>
+        <li>
+          Neither we nor any third parties provide any warranty or guarantee as
+          to the accuracy, timeliness, performance, completeness, or suitability
+          of the information and materials found or offered on this website for
+          any particular purpose.
+        </li>
+        <li>
+          Your use of any information or materials on our website and/or product
+          pages is entirely at your own risk.
+        </li>
+        <li>
+          Our website contains material which is owned by or licensed to us.
+          This material includes, but is not limited to, the design, layout,
+          look, appearance, and graphics.
+        </li>
+        <li>
+          Unauthorized use of information provided by us shall give rise to a
+          claim for damages and/or be a criminal offense.
+        </li>
+        <li>
+          From time to time our website may also include links to other
+          websites. These links are provided for your convenience to provide
+          further information.
+        </li>
+        <li>
+          You may not create a link to our website from another website or
+          document without COOLIENO1 SERVICESPHERE PRIVATE LIMITED’s prior
+          written consent.
+        </li>
+        <li>
+          Any dispute arising out of use of our website and/or purchase with us
+          and/or any engagement with us is subject to the laws of India.
+        </li>
+        <li>
+          We shall be under no liability whatsoever in respect of any loss or
+          damage arising directly or indirectly out of the decline of
+          authorization for any Transaction, on Account of the Cardholder having
+          exceeded the preset limit mutually agreed by us with our acquiring
+          bank from time to time.
+        </li>
+      </ul>
     </div>
   );
 };

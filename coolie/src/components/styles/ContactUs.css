@@ -1,30 +1,48 @@
+/* ContactUs.css */
+
 .contact-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    text-align: center;
+    background-color: #f5f5f5;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .contact-container h2 {
     margin-bottom: 20px;
+    color: #333333;
 }
 
-.contact-container form {
-    display: flex;
-    flex-direction: column;
+.contact-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    /* Added margin to create space between form and details card */
 }
 
-.contact-container input,
-.contact-container textarea {
-    width: 100%;
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
 
-.contact-container button {
-    padding: 10px;
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999999;
+}
+
+.contact-form button {
+    padding: 10px 20px;
     background-color: #ff0000;
     color: white;
     border: none;
@@ -33,7 +51,28 @@
     transition: background-color 0.2s;
 }
 
-.contact-container button:hover {
+.contact-form button:hover {
     background-color: #dc3545;
-    /* Darker shade for hover effect */
+}
+
+.contact-details {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h3 {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    color: #666666;
+}
+
+.contact-details p:last-child {
+    margin-bottom: 0;
 }

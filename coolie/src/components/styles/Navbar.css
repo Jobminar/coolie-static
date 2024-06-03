@@ -39,6 +39,7 @@
     gap: 20px;
     /* Space between register and book service button */
     margin-left: auto;
+    margin-top: 10px;
     /* Push the group to the right */
 }
 
@@ -62,12 +63,14 @@
     background-color: #d5d5d5;
     padding: 5px 10px;
     border-radius: 5px;
+    margin-top: 6px;
 }
 
 .navbar-location a {
     text-decoration: none;
     color: inherit;
     margin-left: 5px;
+
 }
 
 .navbar-location svg {
@@ -75,7 +78,7 @@
 }
 
 .navbar-center input {
-    width: 300px;
+    width: 430px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -114,6 +117,7 @@
     .navbar-location {
         font-size: 14px;
         padding: 3px 8px;
+
     }
 
     .book-service-button {

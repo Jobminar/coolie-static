@@ -1,5 +1,3 @@
-// RefundPolicy.jsx
-
 import React from "react";
 import "./styles/RefundPolicy.css";
 
@@ -27,7 +25,6 @@ const RefundPolicy = () => {
         If you have any questions on how to return your item to us, contact us
         at support@coolieno1.com.
       </p>
-      {/* Add more sections as needed */}
     </div>
   );
 };

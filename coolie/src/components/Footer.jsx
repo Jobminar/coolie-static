@@ -49,7 +49,7 @@ const Footer = () => {
             <h5>COMPANY</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/register">About Us</Link>
+                <Link to="/aboutpage">About Us</Link>
               </li>
               {/* <li>
                 <a href="#reviews">Reviews</a>
@@ -93,12 +93,17 @@ const Footer = () => {
           <div className="footer-section">
             <h5>CONTACT</h5>
             <p>
-              <FiPhone /> Phone: +1-234-567-890
+              <FiPhone /> Phone: +91 9959668703
             </p>
             <p>
               <FiMail /> Email: thecoolieinfo@gmail.com
             </p>
-            <p>Address: 123 Main St, City, Country</p>
+            <p>
+              Address: 18-5-294/A, <br />
+              Sapthagiri Nagar, Kapilateertham Road,
+              <br />
+              Tirupati (Urban), Chittoor- 517501, Andhra Pradesh
+            </p>
           </div>
         </div>
         <Row className="copyright">
