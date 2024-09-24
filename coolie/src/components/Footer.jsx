@@ -93,17 +93,18 @@ const Footer = () => {
           <div className="footer-section">
             <h5>CONTACT</h5>
             <p>
-              <FiPhone /> Phone: +91 9959668703
+              <FiPhone /> Phone: +91 7675974943
             </p>
             <p>
-              <FiMail /> Email: thecoolieinfo@gmail.com
+              <FiMail /> Email: support@tasktigers.com
             </p>
             <p>
-              Address: 18-5-294/A, <br />
-              Sapthagiri Nagar, Kapilateertham Road,
+              Address: 5-2-21, 3rd Floor, <br />
+              Bharatnest Home Services LLP, Durganagar,
               <br />
-              Tirupati (Urban), Chittoor- 517501, Andhra Pradesh
+              Dilsukhnagar, Hyderabad- 500060, Telangana
             </p>
+
           </div>
         </div>
         <Row className="copyright">

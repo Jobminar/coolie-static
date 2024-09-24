@@ -39,6 +39,7 @@
     /* Increase the height */
     object-fit: cover;
     border-radius: 5px 5px 0 0;
+    cursor: pointer;
 }
 
 
@@ -51,6 +52,7 @@
 .custom-card-title {
     font-size: 0.75rem;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .custom-rating {

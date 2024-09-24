@@ -1,5 +1,4 @@
 import React from "react";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import "./styles/Navbar.css"; // Import the CSS file
 import CoolieLogo from "./assets/coolie-logo.png";
 import Register from "./assets/Register.png";
@@ -24,22 +23,15 @@ const NavbarComponent = () => {
         <div className="navbar-logo" onClick={handleLogoClick}>
           <img src={CoolieLogo} alt="CoolieNo1" />
         </div>
-        <div className="navbar-center">
-          <div className="navbar-location">
-            <FaMapMarkerAlt />
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Hyderabad"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Hyderabad
-            </a>
-          </div>
+
+        {/* <div className="navbar-center">
+        
           <input
             type="text"
             placeholder="Search for a service e.g. House Cleaning, Air Conditioner, Kitchen Chimney, Electrical works, etc"
           />
-        </div>
+        </div> */}
+
         <div className="navbar-items">
           <a href="#register" onClick={handleRegisterClick}>
             <img src={Register} alt="Register As A Professional" />

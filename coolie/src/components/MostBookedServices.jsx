@@ -4,8 +4,11 @@ import HomeApplianceCleaning from "./assets/HomeAppliance-cleaning.png";
 import ElectricalWorks from "./assets/Electricalworks.png";
 import ACservice from "./assets/ACservice.png";
 import Geyser from "./assets/Geyser.png";
+import { useNavigate } from "react-router-dom";
+
 
 const MostBookedJobs = () => {
+  const navigate=useNavigate()
   const jobs = [
     {
       title: "Kitchen Cleaning",
@@ -44,13 +47,14 @@ const MostBookedJobs = () => {
               index === 1 || index === 3 ? "no-margin" : ""
             }`}
           >
-            <img
+            <img 
+            onClick={()=>navigate("/servicebook")}
               src={job.image}
               alt={job.title}
               className="custom-card-img-top"
             />
             <div className="custom-card-body">
-              <h5 className="custom-card-title">{job.title}</h5>
+              <h5 className="custom-card-title"   onClick={()=>navigate("/servicebook")}>{job.title}</h5>
               <p className="custom-rating">{job.rating}</p>
               <p className="custom-price">{job.price}</p>
             </div>
