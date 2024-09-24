@@ -6,8 +6,11 @@ const RefundPolicy = () => {
     <div className="policy-container">
       <h2>Refund Policy</h2>
       <p>
-        Thank you for choosing Coolie No1. If you are not entirely satisfied
-        with your purchase, we're here to help.
+      TaskTigers strives to deliver the best service experience to our customers. 
+      However, in the event of any service failure or unexpected situations, 
+      we will review refund claims carefully. Refund requests must be raised within 48 hours of the service completion date.
+      Approved refunds will be processed within 48 hours of the request and will be credited back to the user's original payment method within 5-7 business days, depending on the bank and payment gateway processing times.
+     TaskTigers uses third-party payment processors, and while we strive to ensure smooth payment transactions, we are not responsible for any delays caused by the payment processing systems. Users can reach TaskTigers by writning an email to support@tasktigers.in
       </p>
       <h3>Refunds</h3>
       <p>

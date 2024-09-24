@@ -1,10 +1,10 @@
 import React from "react";
-import coolieLogo from "./assets/coolie-logo.png";
+// import coolieLogo from "./assets/coolie-logo.png";
 import "./styles/Aboutpage.css";
 const AboutUs = () => {
   return (
     <div className="about-container">
-      <img src={coolieLogo} alt="Coolie Logo" className="about-logo" />
+      {/* <img src={coolieLogo} alt="Coolie Logo" className="about-logo" /> */}
       <div className="about-section">
         <h2>About Us</h2>
         <p>

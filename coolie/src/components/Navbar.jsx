@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles/Navbar.css"; // Import the CSS file
 import CoolieLogo from "./assets/coolie-logo.png";
-import Register from "./assets/Register.png";
 import { useNavigate } from "react-router-dom";
 
 const NavbarComponent = () => {
@@ -21,31 +20,9 @@ const NavbarComponent = () => {
     <div className="sticky-top">
       <nav className="navbar navbar-bottom">
         <div className="navbar-logo" onClick={handleLogoClick}>
-          <img src={CoolieLogo} alt="CoolieNo1" />
+          <img src={CoolieLogo} alt="Task tigers" />
         </div>
-
-        {/* <div className="navbar-center">
-        
-          <input
-            type="text"
-            placeholder="Search for a service e.g. House Cleaning, Air Conditioner, Kitchen Chimney, Electrical works, etc"
-          />
-        </div> */}
-
-        <div className="navbar-items">
-          <a href="#register" onClick={handleRegisterClick}>
-            <img src={Register} alt="Register As A Professional" />
-            <span>Register As A Professional</span>
-          </a>
-          <a
-            href="#book-service"
-            className="book-service-button"
-            id="bookthat"
-            onClick={handleBookServiceClick}
-          >
-            Book Service
-          </a>
-        </div>
+      
       </nav>
     </div>
   );

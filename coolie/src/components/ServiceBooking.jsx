@@ -23,28 +23,28 @@ const ServiceBooking = () => {
       description:
         "Ensure your kitchen is spotless and hygienic with our comprehensive kitchen cleaning service, removing grease, grime, and bacteria from every corner.",
       image: HomeApplianceCleaning,
-      price: 900,
+      price:900
     },
     {
       title: "Bathroom Cleaning",
       description:
         "Experience a sparkling clean bathroom with our specialized cleaning service, targeting tough stains, mold, and mildew for a fresh and sanitary environment.",
       image: Geyser,
-      price: 900,
+      price:600
     },
     {
       title: "Door Bell Installation",
       description:
         "Get your doorbell installed professionally and efficiently, ensuring seamless operation and enhanced security for your home.",
       image: ElectricalWorks,
-      price: 900,
+      price:300
     },
     {
       title: "AC Installation",
       description:
         "Our expert technicians provide reliable and quick AC installation services to keep your home cool and comfortable throughout the year.",
       image: ACservice,
-      price: 900,
+      price:1500
     },
   ];
 
@@ -145,7 +145,7 @@ const ServiceBooking = () => {
                   <button
                     className="slt-book-now-button"
                     onClick={() => handleSelectService(service)}
-                    style={{ backgroundColor: "orange", color: "white" }}
+                    style={{ backgroundColor: "red", color: "white" }}
                   >
                     Select Service
                   </button>

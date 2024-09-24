@@ -11,7 +11,7 @@ const HeroSection = () => {
       <Container>
         <Row>
           <Col md={{ span: 6, offset: 6 }} className="text-left">
-            <h2>Coolie No1 covered you</h2>
+            <h2>Task tigers covered you</h2>
           </Col>
         </Row>
         <Row className="custom-service-cards justify-content-center">

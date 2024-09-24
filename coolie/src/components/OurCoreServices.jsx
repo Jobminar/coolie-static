@@ -14,24 +14,28 @@ const OurCoreServices = () => {
       description:
         "Transform your kitchen into a sparkling haven with our comprehensive cleaning services. We meticulously clean every corner, ensuring a hygienic and inviting cooking space.",
       image: HomeApplianceCleaning,
+      price:900
     },
     {
       title: "Bathroom Cleaning",
       description:
         "Experience a fresh and sanitized bathroom with our top-notch cleaning services. We remove tough stains, mold, and grime, leaving your bathroom spotless and refreshing.",
       image: Geyser,
+      price:600
     },
     {
       title: "Door Bell Installation",
       description:
         "Enhance the security and convenience of your home with our professional doorbell installation services. Our experts ensure a seamless installation, giving you peace of mind.",
       image: ElectricalWorks,
+      price:300
     },
     {
       title: "AC Installation",
       description:
         "Stay cool and comfortable with our reliable AC installation services. Our technicians ensure proper installation for optimal performance and energy efficiency.",
       image: ACservice,
+      price:1500
     },
   ];
 
@@ -49,6 +53,7 @@ const OurCoreServices = () => {
             <div className="service-details">
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>
+              <b><p className="service-description">Price:{service.price}</p></b>
               <button
                 className="book-now-button"
                 onClick={() => handleSelectService(service)}

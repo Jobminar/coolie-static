@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Button, Form, InputGroup } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { FiPhone, FiMail } from "react-icons/fi";
-import mailIcon from "./assets/Mail.png";
 import coolieLogo from "./assets/coolie-logo.png";
 import "./styles/Footer.css";
 import { Link, useLocation } from "react-router-dom";
@@ -68,25 +67,41 @@ const Footer = () => {
               <li>
                 <Link to="/servicebook">Services</Link>
               </li>
-              {/* <li>
-                <a href="#pricing">Pricing</a>
-              </li>
-              <li>
-                <a href="#faq">FAQ</a>
-              </li> */}
+              
             </ul>
           </div>
           <div className="footer-section">
             <h5>TERMS & POLICIES</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/terms">Terms of Service</Link>
+                <Link to="/privacy">Terms of Service</Link>
               </li>
               <li>
                 <Link to="/privacy">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="/refund">Refund Policy</Link>
+                <Link to="/privacy">Refund Policy</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Cancellation Policy</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Payment Terms</Link>
+              </li>
+              <li>
+                <Link to="/privacy"> Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to="/privacy"> User Responsibilities</Link>
+              </li>
+              <li>
+                <Link to="/privacy"> Liability Disclaimer</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Updates to Terms and Conditions</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -104,12 +119,12 @@ const Footer = () => {
               <br />
               Dilsukhnagar, Hyderabad- 500060, Telangana
             </p>
-
+           
           </div>
         </div>
         <Row className="copyright">
           <Col>
-            <p>&copy; 2024 coolieno1.com. All rights reserved</p>
+            <p>&copy; 2024 Task tigers. All rights reserved</p>
           </Col>
         </Row>
       </Container>
