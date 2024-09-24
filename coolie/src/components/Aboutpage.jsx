@@ -17,7 +17,7 @@ const AboutUs = () => {
           comfortable, and functional for years to come.
         </p>
         <p>
-          At Coolie Services, we're committed to providing top-notch home
+          At Task tigers Services, we're committed to providing top-notch home
           services across a wide range of categories. Whether you need plumbing
           repairs, electrical work, pest control, or landscaping services, our
           skilled professionals are here to assist you. We prioritize customer
@@ -27,7 +27,7 @@ const AboutUs = () => {
         <p>
           Our team consists of experienced technicians who undergo rigorous
           training and background checks. We believe in transparency, fair
-          pricing, and reliable service. When you choose Coolie Services, you're
+          pricing, and reliable service. When you choose Task tigers Services, you're
           choosing quality and peace of mind.
         </p>
       </div>
